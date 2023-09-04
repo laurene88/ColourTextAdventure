@@ -75,21 +75,18 @@ public class ButtonController : MonoBehaviour
     public void ClickRed()
     {
         hueController.RedChoice(questionController.currentQS.specialStepValue);
-        Debug.Log("BC: clickedred");
         questionController.ButtonClicked("Red");
     }
 
     public void ClickBlue()
     { 
         hueController.BlueChoice(questionController.currentQS.specialStepValue);
-        Debug.Log("BC: clickedblue");
         questionController.ButtonClicked("Blue");
     }
 
     public void ClickGreen()
     {        
         hueController.GreenChoice(questionController.currentQS.specialStepValue);
-        Debug.Log("BC: clickedgreen");
         questionController.ButtonClicked("Green");
     }
 

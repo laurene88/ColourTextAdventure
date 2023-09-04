@@ -11,7 +11,8 @@ public class HueController : MonoBehaviour
     public float value = 1;
 
     public int clickCount = 0;
-    public float endClickCount = 100.0f;
+    public float topClickCount = 30.0f; // Relates to maximum saturations
+    public int endClickCount = 40; // Relates to the end of the game
     public Color currentColor = Color.white;
 
     // References to all of the text in the scene.
@@ -25,7 +26,7 @@ public class HueController : MonoBehaviour
 
     void Awake()
     {
-        questionTextBox.color = new Color(1,1,1,1);
+        questionTextBox.color = currentColor;
         // have buttons & get all text components
         buttonController = GetComponent<ButtonController>();
     }
@@ -52,13 +53,12 @@ public class HueController : MonoBehaviour
         if (huePosition == 360 || huePosition == 0){
             // do nothing
         }
-        else if (huePosition <=180){ // this is fine as half half. 
+        else if (huePosition <=180){
            MinusStep(stepValue); 
         } else {
             PlusStep(stepValue);
         }
         clickCount++;
-        Debug.Log("HC choice red");
         UpdateHue();
     }
 
@@ -75,7 +75,6 @@ public class HueController : MonoBehaviour
             MinusStep(stepValue);
         }
         clickCount++;
-            Debug.Log("HC choice blue");
         UpdateHue();
     }
 
@@ -92,7 +91,6 @@ public class HueController : MonoBehaviour
         }
         clickCount++;
         UpdateHue();
-            Debug.Log("HC choice green");
 
     }
 
@@ -117,11 +115,11 @@ public class HueController : MonoBehaviour
     // Changes the color of all the TMP texts to the appropriate hue.
     public void UpdateHue()
     {
-        saturation = clickCount/endClickCount;
-        Debug.Log("hue:"+huePosition);
+        saturation = clickCount/topClickCount;
+        Debug.Log("updatnig hue- clickcount:"+clickCount+"saturation:"+saturation+"hueposition:"+huePosition);
             // H, S, V all 0-1 values.
             //(hue/360, saturation/100, value/100)
-            currentColor = Color.HSVToRGB(huePosition/360, saturation/10, value);
+            currentColor = Color.HSVToRGB(huePosition/360, saturation, value);
             questionTextBox.color = currentColor;
             b1.color = currentColor;
             b2.color = currentColor;
@@ -130,24 +128,29 @@ public class HueController : MonoBehaviour
 
 
     //Different ending text dependent on color block of text at final question. - 6 or 12 endings
-    // RED
-    // YELLOW
-    // GREEN
-    // CYAN
-    // BLUE
-    // PURPLE
-
     public void FakeEnd()
     {
-        if (huePosition >90 && huePosition <150)
-        questionTextBox.text = "GREEN ENDING";
+        Debug.Log(huePosition);
+        if (huePosition >0  && huePosition <=30)
+            questionTextBox.text = "RED ENDING";
+    
+        if (huePosition > 30  && huePosition <=90)
+            questionTextBox.text = "YELLOW ENDING";
+    
+        if (huePosition >90 && huePosition <=150)
+            questionTextBox.text = "GREEN ENDING";
 
-        else if (huePosition <270  && huePosition >210 )
+        if (huePosition >150 && huePosition <=210)
+        questionTextBox.text = "CYAN ENDING";
+
+        if (huePosition >210  && huePosition <=270)
         questionTextBox.text = "BLUE ENDING";
 
-        else 
-          questionTextBox.text = "OTHER ENDING";
+        if (huePosition >270 && huePosition <= 330)
+          questionTextBox.text = "MAGENTA ENDING";
 
+        if ((huePosition >330) && (huePosition <= 360))
+          questionTextBox.text = "RED ENDING (330-360)";  
     }
 
 
@@ -156,9 +159,8 @@ public class HueController : MonoBehaviour
     void Update()
     {
         // Control Ending. (not really needed as Scriptables will control narrative.)
-            if (clickCount >= endClickCount){
+            if (clickCount == endClickCount){
                 FakeEnd();
                }
-
     }
 }
