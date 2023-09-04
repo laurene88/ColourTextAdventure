@@ -31,22 +31,35 @@ public class HueController : MonoBehaviour
         buttonController = GetComponent<ButtonController>();
     }
 
-    // 0 - red * opposite 180
+    //---------------------------------------------------------------------------
+    // HUE INFORMATION
+    //---------------------------------------------------------------------------
+    // Color.HSVToRGB(hue, saturation, value)
+    // H S V are all 0-1 values.
+    //(hue/360, saturation, value)
+
+    // Degree information on each color:
+    // 0 - red * opposite 180 (330-30)
     // 30 - orange
-    // 60 - yellow ^
+    // 60 - yellow ^ (30-90)
     // 90 - chartreuse green
-    // 120 - green * opposite 300
+    // 120 - green * opposite 300 (90-150)
     // 150 - spring green
-    // 180 - cyan ^ 
+    // 180 - cyan ^ (150-210)
     // 210 - azure
-    // 240 - blue * opposite 60
+    // 240 - blue * opposite 60 (210-270)
     // 270 - violet
-    // 300 - magenta ^
+    // 300 - magenta ^ (270-330)
     // 330 - rose
     // %360
 
-    // Color choice methods take a 'step' towards the appropriate color.
-    // If currently at the exact color - don't take any step.
+
+    //---------------------------------------------------------------------------
+    // Color Choice Methods.
+    //      Color choice methods take a 'step' towards the color button chosen.
+    //      If currently at the exact color - don't take any step.
+    //---------------------------------------------------------------------------
+
     // Red Hue is 0 and/or 360, Opposite is 180.
     public void RedChoice(int stepValue)
     {
@@ -96,9 +109,12 @@ public class HueController : MonoBehaviour
 
 
     // -----------------------------------------------------------------------
-    // Moves the hue postiion (degree value) towards the appropriate color.
-    // The size of the change (stepValue) is taken from the QuestionScriptable
-    //  and passed to this method by ...*
+    // Step Methods.
+    //      Moves the hue postiion (degree value) in the right direction.
+    //      +360 %360 to account for circular nature of Hues.
+    //      Plus step/Minus step move around the circle in different directions.
+    //      The size of the change (stepValue) is taken from the QuestionScriptable
+    //      itself and passed to this method by the Button Controller.
     // -----------------------------------------------------------------------
 
     // (current position (+ or - step) +360) %360
@@ -112,13 +128,12 @@ public class HueController : MonoBehaviour
         huePosition = (huePosition - stepValue + 360)%360;
     }
 
-    // Changes the color of all the TMP texts to the appropriate hue.
+
+    // Changes the color of all the TMP texts to the appropriate new hue.
     public void UpdateHue()
     {
         saturation = clickCount/topClickCount;
         Debug.Log("updatnig hue- clickcount:"+clickCount+"saturation:"+saturation+"hueposition:"+huePosition);
-            // H, S, V all 0-1 values.
-            //(hue/360, saturation/100, value/100)
             currentColor = Color.HSVToRGB(huePosition/360, saturation, value);
             questionTextBox.color = currentColor;
             b1.color = currentColor;
