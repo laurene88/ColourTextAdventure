@@ -146,7 +146,7 @@ public class HueController : MonoBehaviour
     public void FakeEnd()
     {
         Debug.Log(huePosition);
-        if (huePosition >0  && huePosition <=30)
+        if (huePosition >=0  && huePosition <=30)
             questionTextBox.text = "RED ENDING";
     
         if (huePosition > 30  && huePosition <=90)
