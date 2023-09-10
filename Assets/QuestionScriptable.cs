@@ -7,7 +7,7 @@ using TMPro;
 public class QuestionScriptable : ScriptableObject
 {
     // Main text for the story/question.
-    [TextAreaAttribute(5,30)]
+    [TextAreaAttribute(5,50)]
     public string question;
     
 
@@ -23,6 +23,7 @@ public class QuestionScriptable : ScriptableObject
 
     // Boolean, does this question lead to different question based on the answer chosen.
     public bool divergingScriptables;
+    public bool hasImpactfulChange;
 
 
     // Links to next question scriptables for all answer selections.

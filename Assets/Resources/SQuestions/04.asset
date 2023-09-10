@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
-  m_Name: THIRD
+  m_Name: 04
   m_EditorClassIdentifier: 
-  question: THIRD
+  question: "It was A\u2019s idea to bring on D. D is essentially the total opposite
+    of A.\r\nThey bring another aspect to the group, they are more.."
   optionRed: red
   optionBlue: blue
   optionGreen: green
-  specialStepValue: 30
+  specialStepValue: 5
   divergingScriptables: 0
-  nextSQ: {fileID: 11400000, guid: cc5486f4da80f964da9891f9091b07b4, type: 2}
+  hasImpactfulChange: 1
+  nextSQ: {fileID: 11400000, guid: cad927c7a9357864b8d5fe17ab27a50e, type: 2}
   nextRedSQ: {fileID: 0}
   nextBlueSQ: {fileID: 0}
   nextGreenSQ: {fileID: 0}

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
+  m_Name: 01
+  m_EditorClassIdentifier: 
+  question: "The industrial area roads are lined with dark grey factory buildings
+    and heavy trucks come and go through large garage doors. Even though all these
+    buildings are all purpose built for efficient production, the feel of the area
+    is slow. As long as you are wearing the appropriate workers uniform - rough clothes,
+    work boots, and perhaps a fluoro safety vest for good luck, you can blend right
+    in. Dressed this way, I walk straight through one of the open garage doors to
+    a spray painted office door in the back of the building. The windows on this
+    small container office are opaque to provide a little privacy. As planned, I\u2019m
+    the last one to arrive for the meeting, A C and D are all inside. \u201CAah here
+    he is\u201D says A. \u201CReady to lock in the final plan?\u201D"
+  optionRed: red
+  optionBlue: blue
+  optionGreen: green
+  specialStepValue: 120
+  divergingScriptables: 0
+  hasImpactfulChange: 0
+  nextSQ: {fileID: 11400000, guid: 6cbdac4db0413384a93ff9b60fb5a1cf, type: 2}
+  nextRedSQ: {fileID: 0}
+  nextBlueSQ: {fileID: 0}
+  nextGreenSQ: {fileID: 0}

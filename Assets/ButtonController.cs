@@ -20,8 +20,7 @@ public class ButtonController : MonoBehaviour
     // Script References
     public HueController hueController;
     public QuestionController questionController;
-
-
+    public EndingWriter endingWriter;
 
     public void Awake()
     {
@@ -29,6 +28,7 @@ public class ButtonController : MonoBehaviour
         buttonLocations = new GameObject[] {button1location, button2location, button3location};
         hueController = GetComponent<HueController>();
         questionController = GetComponent<QuestionController>();
+        endingWriter = GetComponent<EndingWriter>();
     }
 
 
@@ -76,18 +76,31 @@ public class ButtonController : MonoBehaviour
     {
         hueController.RedChoice(questionController.currentQS.specialStepValue);
         questionController.ButtonClicked("Red");
+        // If button has impactful change on ending result
+        if (questionController.currentQS.hasImpactfulChange) {
+           endingWriter.HasImpactfulChange(questionController.currentQS.name, "Red");
+
+        }
     }
 
     public void ClickBlue()
     { 
         hueController.BlueChoice(questionController.currentQS.specialStepValue);
         questionController.ButtonClicked("Blue");
+        // If button has impactful change on ending result
+        if (questionController.currentQS.hasImpactfulChange) {
+           endingWriter.HasImpactfulChange(questionController.currentQS.name, "Blue"); 
+           }
     }
 
     public void ClickGreen()
     {        
         hueController.GreenChoice(questionController.currentQS.specialStepValue);
         questionController.ButtonClicked("Green");
+        // If button has impactful change on ending result
+        if (questionController.currentQS.hasImpactfulChange) {
+           endingWriter.HasImpactfulChange(questionController.currentQS.name, "Green");
+        }
     }
 
 }
