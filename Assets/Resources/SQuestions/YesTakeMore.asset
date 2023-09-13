@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
+  m_Name: YesTakeMore
+  m_EditorClassIdentifier: 
+  question: "\u201CPerhaps it\u2019s a risk worth taking\u2026\u201D\r\n\n\u201CThat\u2019s
+    the spirit! We can add more paintings with this one, and we can take the smaller
+    museum items in our backpacks.\u201D\r\n\r\n\u201CLets do it. Take it all, everything
+    we can, the media will be all over this tomorrow regardless.\u201D\r\n\n\u201CThey
+    will likely increase security after tonight\" said Delta. \u201CWe have 10 minutes
+    before we really have to leave.\"\n\r\nWe spread out, quickly grabbing a few
+    more items. \n\nNow its really time to leave."
+  optionRed: This is stressful
+  optionBlue: This is insane
+  optionGreen: This is smart
+  specialStepValue: 8
+  divergingScriptables: 0
+  hasImpactfulChange: 1
+  nextSQ: {fileID: 11400000, guid: cc5486f4da80f964da9891f9091b07b4, type: 2}
+  nextRedSQ: {fileID: 0}
+  nextBlueSQ: {fileID: 0}
+  nextGreenSQ: {fileID: 0}

@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
   m_Name: 08
   m_EditorClassIdentifier: 
-  question: QUESTION
-  optionRed: red
-  optionBlue: blue
-  optionGreen: red
-  specialStepValue: 5
+  question: "We know the security guards end their rounds at midnight. Then they
+    rely solely on the alarms and cameras until the curator opens the museum the
+    next morning.\r\n\nWe\u2019ve planned to arrive at 1 am, turn off the security
+    system, and enter through the deliveries entrance.\r\n\nWe all arrive at 1 am\u2026\r"
+  optionRed: In pairs
+  optionBlue: Separately
+  optionGreen: Together
+  specialStepValue: 8
   divergingScriptables: 0
   hasImpactfulChange: 0
   nextSQ: {fileID: 11400000, guid: 0dfe466ba0f77db40b26a43cd636a15f, type: 2}

@@ -12,12 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
   m_Name: last
   m_EditorClassIdentifier: 
-  question: this is the last one
-  optionRed: red
-  optionBlue: blue
-  optionGreen: green
-  specialStepValue: 2
+  question: "OK now to get out of here. \n\nWe make our way back to the delivery
+    entrance where we came in. \n\nNone of us are speaking, but the atmosphere is
+    electric. As the cameras are still off we leave together over the back fence,
+    our spoils in tow.\n\nCant wait to see the headlines tomorrow.\nThey\u2019ll
+    probably say we were\u2026\r\n"
+  optionRed: Audacious
+  optionBlue: Cunning
+  optionGreen: Greedy
+  specialStepValue: 8
   divergingScriptables: 0
+  hasImpactfulChange: 0
   nextSQ: {fileID: 0}
   nextRedSQ: {fileID: 0}
   nextBlueSQ: {fileID: 0}

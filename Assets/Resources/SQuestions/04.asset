@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
   m_Name: 04
   m_EditorClassIdentifier: 
-  question: "It was A\u2019s idea to bring on D. D is essentially the total opposite
-    of A.\r\nThey bring another aspect to the group, they are more.."
-  optionRed: red
-  optionBlue: blue
-  optionGreen: green
-  specialStepValue: 5
+  question: "It was Ava\u2019s idea to bring on Charlie.\nCharlie is essentially
+    the total opposite of Ava.\n\nBut I trust Ava when she says that they\u2019ll
+    be an asset.\r \n\nThey seem to be pretty..."
+  optionRed: Loud
+  optionBlue: Chill
+  optionGreen: Chaotic
+  specialStepValue: 15
   divergingScriptables: 0
   hasImpactfulChange: 1
   nextSQ: {fileID: 11400000, guid: cad927c7a9357864b8d5fe17ab27a50e, type: 2}

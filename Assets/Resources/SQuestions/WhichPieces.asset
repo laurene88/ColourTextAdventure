@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
+  m_Name: WhichPieces
+  m_EditorClassIdentifier: 
+  question: "\u201CWhich pieces are you thinking of?\u201D\r\n\r\n\u201CWell, maybe
+    just the painting of the meadow in the other room, and the portrait of the girl
+    there. Those two are the next most valuable ones in here, we can put them with
+    our solid colour painting.\u201D\r\n\r\nTheres silence in the room as we all
+    consider this outrageous option.\r\n\r\n\u201CYea, I think we should do it.\u201D
+    Says Ava to break the silence. \u201CWere already here with all the gear.\u201D"
+  optionRed: OK, just those two
+  optionBlue: No don't push it
+  optionGreen: Take all we can
+  specialStepValue: 8
+  divergingScriptables: 1
+  hasImpactfulChange: 0
+  nextSQ: {fileID: 0}
+  nextRedSQ: {fileID: 11400000, guid: 294c96a8b392ba3418fe4b037439b39d, type: 2}
+  nextBlueSQ: {fileID: 11400000, guid: 72b30feb20c5727499c1d3f811cf7365, type: 2}
+  nextGreenSQ: {fileID: 11400000, guid: 537c55ab458d93b40ba5a5af64c7ff51, type: 2}

@@ -12,13 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
   m_Name: 06
   m_EditorClassIdentifier: 
-  question: This time, the collector has asked for a very famous, solid colour painting
-    currently being shown at the city museum. Ideally, we would target pieces when
-    they are not on display, but this time - the price was right.
-  optionRed: red
-  optionBlue: blue
-  optionGreen: green
-  specialStepValue: 5
+  question: "\u201CYea guys, lets go through this plan one last time. We don\u2019t
+    want anything to go awry.\u201D\r\n\nLast week Ava and Delta went to the museum
+    as reconnaissance. Ava was able to distract security, allowing Delta to hack
+    into their IT system. \n\nNow we have a back door into the museum security system
+    and should be able to turn it off at will. \n\nCharlie watched the deliveries
+    through the back door and was able to learn the door code. \n\nThe team is\u2026\r\n"
+  optionRed: Confident
+  optionBlue: Organised
+  optionGreen: Too confident
+  specialStepValue: 8
   divergingScriptables: 0
   hasImpactfulChange: 0
   nextSQ: {fileID: 11400000, guid: f02ee868e9e2a914693b67cac5a6f63f, type: 2}

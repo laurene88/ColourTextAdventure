@@ -12,14 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
   m_Name: 10
   m_EditorClassIdentifier: 
-  question: QUESTION
-  optionRed: red
-  optionBlue: blue
-  optionGreen: red
-  specialStepValue: 5
+  question: "\u201COk guys.\u201D Delta pulls out a tablet with a sturdy looking
+    case.\n\nShe hacks into the security system and counts down \u201C3\u20262\u20261\u2026\u201D
+    silence - but we see the red light on the outside camera turn off.\r\n\n\u201CIt\u2019s
+    worked! Awesome!\u201D Says Charlie, \u201CNow for my door code.\u201D The rest
+    of us hang back as she walks up to the back door and enters the numbers.\r\n\nThe
+    door opens, and no alarms. Perfect. Charlie signals us all to come in\u2026\r\n"
+  optionRed: We sneak in
+  optionBlue: We stroll in
+  optionGreen: We run in
+  specialStepValue: 8
   divergingScriptables: 0
   hasImpactfulChange: 0
-  nextSQ: {fileID: 11400000, guid: cc5486f4da80f964da9891f9091b07b4, type: 2}
+  nextSQ: {fileID: 11400000, guid: 356a58c6aed5ff24b9cd4371cfbf0061, type: 2}
   nextRedSQ: {fileID: 0}
   nextBlueSQ: {fileID: 0}
   nextGreenSQ: {fileID: 0}

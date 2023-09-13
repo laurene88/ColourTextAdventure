@@ -12,17 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
   m_Name: 02
   m_EditorClassIdentifier: 
-  question: "The four of us look like a rag -tag bunch, but you shouldn\u2019t let
-    looks fool you. I\_\_have assembled the best in the area - I can\u2019t have
-    any less than the best on the team. Although our group doesn\u2019t have a name,
-    people in the know refer to us as \u2018Art Group.\u2019 We are able to procure
-    art pieces and create provenance documents for those collectors who can afford
-    our services. Our reputation is well known within certain circles, but now we
-    have been tasked with our biggest order yet. One part of me is nervous about
-    this upcoming heist, but the other is\u2026"
-  optionRed: I'd perfer we focus on the soldiers
-  optionBlue: Good Idea
-  optionGreen: That sounds expensive..
+  question: "We may look like a rag-tag team, but we have big plans to pull off the
+    biggest heist this town has ever seen! \r\n\nWe\u2019ve been planning for a week
+    now. \r\n\nThe famous solid colour painting is now on display at the town museum,
+    and its soon to be ours.\r\n\nPart of me is nervous about this upcoming heist,
+    but the other is\u2026"
+  optionRed: More than ready
+  optionBlue: Prepared
+  optionGreen: Excited
   specialStepValue: 60
   divergingScriptables: 0
   hasImpactfulChange: 0

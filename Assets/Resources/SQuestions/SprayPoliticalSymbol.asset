@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
+  m_Name: SprayPoliticalSymbol
+  m_EditorClassIdentifier: 
+  question: "\"But maybe this could be an interesting way to throw them off the trail.\u201D\r\n\nCharlie
+    shakes the can and gets to work, spraying where the painting used to be. \u201CWhat
+    political stance shall we take?\u201D she smiles back at us for ideas.\r\n\r\n\u201CShall
+    we mention a certain political party?\u201D questions Ava.\r\n\r\n\u201CSomething
+    relevant to art \u201D offers Delta, \u201CPerhaps.. about returning stolen art
+    to their origin countries.\u201D"
+  optionRed: Returning art
+  optionBlue: No, itd be a mistake
+  optionGreen: Political statement
+  specialStepValue: 8
+  divergingScriptables: 1
+  hasImpactfulChange: 0
+  nextSQ: {fileID: 0}
+  nextRedSQ: {fileID: 11400000, guid: c4ce9c9c722002d46ab350fe74a55996, type: 2}
+  nextBlueSQ: {fileID: 11400000, guid: 69c8260f4cf117448a33632a075f6d09, type: 2}
+  nextGreenSQ: {fileID: 11400000, guid: c4ce9c9c722002d46ab350fe74a55996, type: 2}

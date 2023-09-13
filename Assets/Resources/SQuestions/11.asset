@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
-  m_Name: 03
+  m_Name: 11
   m_EditorClassIdentifier: 
-  question: "Ava and I go way back, I\u2019ve always admired their..."
-  optionRed: Charisma
-  optionBlue: Intelligence
-  optionGreen: Confidence
-  specialStepValue: 30
+  question: "Keeping on task we head to the West Wing. \n\n\u201CThere it is.\u201D\r\n\nThe
+    painting is right in front of us, not behind glass like some other items in the
+    museum.\r\n\nIt's so\u2026\r\n"
+  optionRed: renowned
+  optionBlue: valuable
+  optionGreen: plain
+  specialStepValue: 8
   divergingScriptables: 0
   hasImpactfulChange: 0
-  nextSQ: {fileID: 11400000, guid: a49eede4e57053648a3d851ba7db0124, type: 2}
+  nextSQ: {fileID: 11400000, guid: 5a9af1a74e26e904682e5190791739f9, type: 2}
   nextRedSQ: {fileID: 0}
   nextBlueSQ: {fileID: 0}
   nextGreenSQ: {fileID: 0}

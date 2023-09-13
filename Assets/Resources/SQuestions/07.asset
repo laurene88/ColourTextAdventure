@@ -12,15 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
   m_Name: 07
   m_EditorClassIdentifier: 
-  question: "\u201CLet\u2019s get straight down to it guys.\u201D As A suggested,
-    (and as was the purpose of the meeting), we discuss our plan one last time to
-    ensure everyone is sure of the minutiae. We need everything to fall into place
-    for this to work. Even though we didn\u2019t want to be in the same place for
-    too long together in the lead up to the heist."
-  optionRed: red
-  optionBlue: blue
-  optionGreen: red
-  specialStepValue: 5
+  question: "\u201CSounds good team. Even though this is our first foray into art,
+    I think its going to go really well.\u201D\n\n\"OK we're ready.\""
+  optionRed: Tonight.
+  optionBlue: Tomorrow.
+  optionGreen: Lets go now.
+  specialStepValue: 10
   divergingScriptables: 0
   hasImpactfulChange: 0
   nextSQ: {fileID: 11400000, guid: 9ebe34ae545de9d43b2d1952b273a766, type: 2}

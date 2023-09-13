@@ -10,16 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
-  m_Name: 03
+  m_Name: 13
   m_EditorClassIdentifier: 
-  question: "Ava and I go way back, I\u2019ve always admired their..."
-  optionRed: Charisma
-  optionBlue: Intelligence
-  optionGreen: Confidence
-  specialStepValue: 30
+  question: "They the painting free from the frame, then they hand it to Ava.\n\nShe
+    rolls it up and puts it into a poster tube so that we can get it out of the museum.\n\nWe
+    will transfer it to a more secure frame as soon as possible outside. \n\nOur
+    priority at the moment is..."
+  optionRed: Its condition
+  optionBlue: Hiding it
+  optionGreen: Acquiring it
+  specialStepValue: 8
   divergingScriptables: 0
   hasImpactfulChange: 0
-  nextSQ: {fileID: 11400000, guid: a49eede4e57053648a3d851ba7db0124, type: 2}
+  nextSQ: {fileID: 11400000, guid: ef932541f5027f44c8a88e676ae38302, type: 2}
   nextRedSQ: {fileID: 0}
   nextBlueSQ: {fileID: 0}
   nextGreenSQ: {fileID: 0}

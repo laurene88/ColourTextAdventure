@@ -12,21 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
   m_Name: 05
   m_EditorClassIdentifier: 
-  question: "C is the latest I have bought in, completing our quartet. This will
-    be their first job with the team. We needed someone with technical programming
-    expertise. C initially worked in the computing world where I had some positive
-    impressions working with them at my prior day job. However, they earned more
-    of my attention after they left that company to continue their own, more lucrative
-    computer business full time. Thanks to their knowledge combining technology,
-    security, and finance, they should be a massive asset to the team. Although they
-    will be a huge asset academically, I\u2019m eager to see how they manage during
-    the actual heist. The physical requirements and tense atmosphere will be more
-    than they are used to sitting behind a computer screen. I\u2019m hoping they
+  question: "Delta is the latest person to join our group.\r\n\nI thought we needed
+    someone clever with technology so I bought them on board.\r\n\nTheir role is
+    the most important part of this heist, but the atmosphere will be more stressful
+    than they are used to sitting behind a computer screen.\n\nI\u2019m hoping they
     can help the team be more\u2026"
-  optionRed: red
-  optionBlue: blue
-  optionGreen: red
-  specialStepValue: 5
+  optionRed: Bold
+  optionBlue: Orderly
+  optionGreen: Creative
+  specialStepValue: 15
   divergingScriptables: 0
   hasImpactfulChange: 0
   nextSQ: {fileID: 11400000, guid: e6bb408372d0b234db81bbe9a4600063, type: 2}

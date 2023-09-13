@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
+  m_Name: SprayGroupSymbol
+  m_EditorClassIdentifier: 
+  question: "\"But maybe this could be an interesting way to raise our own stock.\u201D\r\n\r\nCharlie
+    shakes the can and gets to work, spraying where the painting used to be. \u201CWhat
+    do you think, a classic playing card suit? Our names?\u201D she laughs and smiles
+    back at us to hear our ideas.\r\n\n\"Some symbol for us, AT for 'art theives'\"\n\r\n\u201CWhy
+    not keep it as simple as possible \u201D offers Delta, \u201CA square, representing
+    the empty frame of a painting.\u201D\r\n\r\n\u201CBoss?\u201D asks Charlie, \u201CYou
+    choose.\u201D"
+  optionRed: A+T symbol
+  optionBlue: No, itd be a mistake
+  optionGreen: Square
+  specialStepValue: 10
+  divergingScriptables: 1
+  hasImpactfulChange: 0
+  nextSQ: {fileID: 0}
+  nextRedSQ: {fileID: 11400000, guid: c4ce9c9c722002d46ab350fe74a55996, type: 2}
+  nextBlueSQ: {fileID: 11400000, guid: 69c8260f4cf117448a33632a075f6d09, type: 2}
+  nextGreenSQ: {fileID: 11400000, guid: c4ce9c9c722002d46ab350fe74a55996, type: 2}

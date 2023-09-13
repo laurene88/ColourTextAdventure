@@ -10,16 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
-  m_Name: 03
+  m_Name: NoTakeMore
   m_EditorClassIdentifier: 
-  question: "Ava and I go way back, I\u2019ve always admired their..."
-  optionRed: Charisma
-  optionBlue: Intelligence
-  optionGreen: Confidence
-  specialStepValue: 30
+  question: "\u201CNo way. We don\u2019t want to be in here for any longer than we
+    need to be. Come on guys, lets stick to the plan and get this painting out of
+    here before we think about anything else.\u201D\r\n\r\nThe others look a bit
+    unsure, but agree to follow my lead."
+  optionRed: Theyre confident
+  optionBlue: Theyre reckless
+  optionGreen: They're arrogant
+  specialStepValue: 8
   divergingScriptables: 0
   hasImpactfulChange: 0
-  nextSQ: {fileID: 11400000, guid: a49eede4e57053648a3d851ba7db0124, type: 2}
+  nextSQ: {fileID: 11400000, guid: cc5486f4da80f964da9891f9091b07b4, type: 2}
   nextRedSQ: {fileID: 0}
   nextBlueSQ: {fileID: 0}
   nextGreenSQ: {fileID: 0}

@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
-  m_Name: 03
+  m_Name: SprayOnWall
   m_EditorClassIdentifier: 
-  question: "Ava and I go way back, I\u2019ve always admired their..."
-  optionRed: Charisma
-  optionBlue: Intelligence
-  optionGreen: Confidence
-  specialStepValue: 30
+  question: "Charlie quickly paints on the wall.\nI\u2019m unsure how I feel about
+    this, But it\u2019s done now.\r\n"
+  optionRed: I'm intrigued
+  optionBlue: I regret it already
+  optionGreen: I wish I'd thought of this
+  specialStepValue: 10
   divergingScriptables: 0
-  hasImpactfulChange: 0
-  nextSQ: {fileID: 11400000, guid: a49eede4e57053648a3d851ba7db0124, type: 2}
+  hasImpactfulChange: 1
+  nextSQ: {fileID: 11400000, guid: 49982a384d2f2464892c3737e3c8cacd, type: 2}
   nextRedSQ: {fileID: 0}
   nextBlueSQ: {fileID: 0}
   nextGreenSQ: {fileID: 0}

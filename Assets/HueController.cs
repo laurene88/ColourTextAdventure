@@ -11,7 +11,7 @@ public class HueController : MonoBehaviour
     public float value = 1;
 
     public int clickCount = 0;
-    public float topClickCount = 23f; // Relates to maximum saturation
+    public float topClickCount = 20f; // Relates to maximum saturation
     public static int endClickCount = 25; // Relates to the end of the game
     public Color currentColor = Color.white;
 
