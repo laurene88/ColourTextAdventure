@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9939942e4dc361b4496515cb7c9a6539, type: 3}
   m_Name: 13
   m_EditorClassIdentifier: 
-  question: "They the painting free from the frame, then they hand it to Ava.\n\nShe
+  question: "They cut the painting free from the frame, then they hand it to Ava.\n\nShe
     rolls it up and puts it into a poster tube so that we can get it out of the museum.\n\nWe
     will transfer it to a more secure frame as soon as possible outside. \n\nOur
     priority at the moment is..."

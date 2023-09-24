@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class ButtonController : MonoBehaviour
 {
     // Button Location references
@@ -102,5 +103,11 @@ public class ButtonController : MonoBehaviour
            endingWriter.HasImpactfulChange(questionController.currentQS.name, "Green");
         }
     }
+
+
+public void PressHomeButton()
+{
+    SceneManager.LoadScene(0);
+}
 
 }

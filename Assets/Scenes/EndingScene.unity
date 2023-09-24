@@ -1113,7 +1113,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5f166c8b64f4b45b6e7675858963c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leavesDisguiseBool: 0
+  choseHats: 0
+  choseWigs: 0
+  choseBalaclavas: 0
+  sprayedPolitical: 0
+  sprayedSymbol: 0
+  leftPaint: 0
+  tookMany: 0
+  tookTwo: 0
+  endColour: 
 --- !u!1 &1183926790
 GameObject:
   m_ObjectHideFlags: 0

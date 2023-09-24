@@ -20,7 +20,7 @@ MonoBehaviour:
   optionGreen: Chaotic
   specialStepValue: 15
   divergingScriptables: 0
-  hasImpactfulChange: 1
+  hasImpactfulChange: 0
   nextSQ: {fileID: 11400000, guid: cad927c7a9357864b8d5fe17ab27a50e, type: 2}
   nextRedSQ: {fileID: 0}
   nextBlueSQ: {fileID: 0}

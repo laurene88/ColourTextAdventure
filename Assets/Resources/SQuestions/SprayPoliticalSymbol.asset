@@ -23,7 +23,7 @@ MonoBehaviour:
   optionGreen: Political statement
   specialStepValue: 8
   divergingScriptables: 1
-  hasImpactfulChange: 0
+  hasImpactfulChange: 1
   nextSQ: {fileID: 0}
   nextRedSQ: {fileID: 11400000, guid: c4ce9c9c722002d46ab350fe74a55996, type: 2}
   nextBlueSQ: {fileID: 11400000, guid: 69c8260f4cf117448a33632a075f6d09, type: 2}
