@@ -17,18 +17,22 @@ public class HueController : MonoBehaviour
 
     // References to all of the text in the scene.
     public TMP_Text questionTextBox;
-    public TMP_Text b1;
-    public TMP_Text b2;
-    public TMP_Text b3;
+    public TMP_Text b1text;
+    public TMP_Text b2text;
+    public TMP_Text b3text;
 
     // Script Refrences
     public ButtonController buttonController;
 
     void Awake()
     {
-        questionTextBox.color = currentColor;
+        //questionTextBox.color = currentColor;
         // have buttons & get all text components
         buttonController = GetComponent<ButtonController>();
+    }
+
+    void Start(){
+        currentColor = Color.white;
     }
 
     //---------------------------------------------------------------------------
@@ -136,9 +140,9 @@ public class HueController : MonoBehaviour
        // Debug.Log("updatnig hue- clickcount:"+clickCount+"saturation:"+saturation+"hueposition:"+huePosition);
             currentColor = Color.HSVToRGB(huePosition/360, saturation, value);
             questionTextBox.color = currentColor;
-            b1.color = currentColor;
-            b2.color = currentColor;
-            b3.color = currentColor;
+            b1text.color = currentColor;
+            b2text.color = currentColor;
+            b3text.color = currentColor;
     }
 
 

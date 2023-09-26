@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndingWriter : MonoBehaviour
 {
@@ -75,6 +76,12 @@ if (QSname == "WhichPieces" && color == "Green"){
 
     if (QSname == "TakeMore" && color == "Green"){
         tookMany = true;
+    }
+
+    if (QSname == "last"){
+        //GO TO END SCENES
+        DontDestroyOnLoad(this);
+        SceneManager.LoadScene("EndScene");
     }
 
     return;

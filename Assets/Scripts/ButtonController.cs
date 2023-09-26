@@ -21,6 +21,7 @@ public class ButtonController : MonoBehaviour
     // Script References
     public HueController hueController;
     public QuestionController questionController;
+    public GameObject endingManager;
     public EndingWriter endingWriter;
 
     public void Awake()
@@ -29,7 +30,7 @@ public class ButtonController : MonoBehaviour
         buttonLocations = new GameObject[] {button1location, button2location, button3location};
         hueController = GetComponent<HueController>();
         questionController = GetComponent<QuestionController>();
-        endingWriter = GetComponent<EndingWriter>();
+        endingWriter = endingManager.GetComponent<EndingWriter>();
     }
 
 
@@ -105,9 +106,5 @@ public class ButtonController : MonoBehaviour
     }
 
 
-public void PressHomeButton()
-{
-    SceneManager.LoadScene(0);
-}
 
 }

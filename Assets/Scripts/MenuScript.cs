@@ -15,14 +15,19 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+
     public void PressExitButton()
     {
-        exittingPanel.SetActive(true);
+      exittingPanel.SetActive(true);
     }
 
-    public void ExitYes(){
-        Application.Quit();
-    }
+    //----------------------------------------------
+    // Exit button Removed as Web based hosting.
+    //----------------------------------------------
+   
+   // public void ExitYes(){
+    //    Application.Quit();
+    //}
 
     public void ExitNo(){
          exittingPanel.SetActive(false);
