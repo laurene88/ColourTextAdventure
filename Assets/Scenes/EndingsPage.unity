@@ -1415,8 +1415,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1176961323}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: PressHomeButton
+        m_TargetAssemblyTypeName: HomebuttonsGame, Assembly-CSharp
+        m_MethodName: clickYes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1524,20 +1524,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1176961320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b494cb1b9e75214b9a9911aabb22e5e, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a6ef2c79b30ca2439f5912135f02783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button1location: {fileID: 0}
-  button2location: {fileID: 0}
-  button3location: {fileID: 0}
-  buttonLocations: []
-  questionTextBox: {fileID: 0}
-  RedButton: {fileID: 0}
-  BlueButton: {fileID: 0}
-  GreenButton: {fileID: 0}
-  hueController: {fileID: 0}
-  questionController: {fileID: 0}
-  endingWriter: {fileID: 0}
+  homePanel: {fileID: 0}
+  endingManager: {fileID: 0}
 --- !u!1 &1358203959
 GameObject:
   m_ObjectHideFlags: 0

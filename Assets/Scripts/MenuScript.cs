@@ -35,6 +35,6 @@ public class MenuScript : MonoBehaviour
     }
 
     public void PressEndingsButton(){
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("EndingsPage");
     }
 }

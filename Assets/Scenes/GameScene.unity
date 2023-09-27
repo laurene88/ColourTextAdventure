@@ -1052,6 +1052,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5f166c8b64f4b45b6e7675858963c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 1176961320}
+  huecontroller: {fileID: 0}
   choseHats: 0
   choseWigs: 0
   choseBalaclavas: 0
@@ -1060,7 +1062,7 @@ MonoBehaviour:
   leftPaint: 0
   tookMany: 0
   tookTwo: 0
-  endColour: 
+  endColor: 
 --- !u!4 &954227678
 Transform:
   m_ObjectHideFlags: 0
@@ -1522,6 +1524,8 @@ MonoBehaviour:
   b2text: {fileID: 1488559395}
   b3text: {fileID: 1265978260}
   buttonController: {fileID: 0}
+  endingManager: {fileID: 0}
+  endingwriter: {fileID: 0}
 --- !u!114 &1176961325
 MonoBehaviour:
   m_ObjectHideFlags: 0

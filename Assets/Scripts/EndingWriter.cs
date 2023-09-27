@@ -7,6 +7,8 @@ public class EndingWriter : MonoBehaviour
 {
 // Keeps a note of all the impactful change choices made
 // to write in the ending
+public GameObject gm;
+public HueController huecontroller;
 
 // Booleans
 public bool choseHats;
@@ -19,9 +21,14 @@ public bool tookMany;
 public bool tookTwo;
 
 // Strings
-public string endColour;
+public string endColor;
 
+public Color endHueColor;
 
+public void Start()
+{
+    huecontroller = gm.GetComponent<HueController>();
+}
 // Called from the ButtonController, passes Question Controller, scriptable information.
 public void HasImpactfulChange(string QSname, string color)
 {
@@ -80,7 +87,9 @@ if (QSname == "WhichPieces" && color == "Green"){
 
     if (QSname == "last"){
         //GO TO END SCENES
-        DontDestroyOnLoad(this);
+        endHueColor = huecontroller.getHueColor();
+        huecontroller.GiveEndColor();
+        DontDestroyOnLoad(this); // TO DO dont want more than 1 ending writer, dont want 
         SceneManager.LoadScene("EndScene");
     }
 
@@ -88,21 +97,18 @@ if (QSname == "WhichPieces" && color == "Green"){
 }
 
 
-public void whatDidMuseumCuratorSay(string color){
-
+public void setEndColor(string color){
+    endColor = color;
 }
-//string leavingDisguiseString =  leavesDisguiseBool? "they left their disguises" : "we are unsure if they used disguises";
-//"The famous 'Red' painting by the artist known as 'LXE' was stolen last night from the Central City Museum."
 
-public void update()
+public string getEndColor()
 {
-    string storyline = choseWigs ? "the suspects left fake hair at the scene, suggesting teh use of wigs" : "the perps were all blonde";
-    if (Input.GetKeyDown("space"))
-    {
-        Debug.Log(storyline);
-    }
+    return endColor;
 }
 
+public Color getHue(){
+    return endHueColor;
+}
 //COLOR
 //CLOTHING
 //PAINTED

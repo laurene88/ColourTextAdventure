@@ -1148,8 +1148,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1176961321}
   - component: {fileID: 1176961322}
-  - component: {fileID: 1176961327}
   - component: {fileID: 1176961328}
+  - component: {fileID: 1176961329}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -1195,27 +1195,8 @@ MonoBehaviour:
   b2text: {fileID: 1488559395}
   b3text: {fileID: 1265978260}
   buttonController: {fileID: 0}
---- !u!114 &1176961327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1176961320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb5f166c8b64f4b45b6e7675858963c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  choseHats: 0
-  choseWigs: 0
-  choseBalaclavas: 0
-  sprayedPolitical: 0
-  sprayedSymbol: 0
-  leftPaint: 0
-  tookMany: 0
-  tookTwo: 0
-  endColour: 
+  endingManager: {fileID: 0}
+  endingwriter: {fileID: 0}
 --- !u!114 &1176961328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1229,6 +1210,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePanel: {fileID: 0}
+--- !u!114 &1176961329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176961320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 342c3ece36b38cd4998e1485fb4305a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endingManager: {fileID: 0}
+  endingwriter: {fileID: 0}
+  canvasTextBox: {fileID: 538002409}
 --- !u!1 &1183926790
 GameObject:
   m_ObjectHideFlags: 0

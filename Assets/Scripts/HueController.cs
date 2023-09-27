@@ -23,12 +23,17 @@ public class HueController : MonoBehaviour
 
     // Script Refrences
     public ButtonController buttonController;
+    public GameObject endingManager;
+    public EndingWriter endingwriter;
+
 
     void Awake()
     {
         //questionTextBox.color = currentColor;
         // have buttons & get all text components
         buttonController = GetComponent<ButtonController>();
+        endingManager = GameObject.Find("EndingManager");
+        endingwriter = endingManager.GetComponent<EndingWriter>();
     }
 
     void Start(){
@@ -145,33 +150,42 @@ public class HueController : MonoBehaviour
             b3text.color = currentColor;
     }
 
-
+    public Color getHueColor()
+    {
+        return currentColor;
+    }
     //Different ending text dependent on color block of text at final question. - 6 or 12 endings
-    public void FakeEnd()
+    public void GiveEndColor()
     {
         //choice buttons fade out and then are destroyed.
         // text fades out then changes to ending text and fades back in?
         Debug.Log(huePosition);
         if (huePosition >=0  && huePosition <=30)
-            questionTextBox.text = "FAMED 'RED' PAINTING STOLEN";
+            endingwriter.setEndColor("Red");
     
         if (huePosition > 30  && huePosition <=90)
-            questionTextBox.text = "FAMED 'YELLOW' PAINTING STOLEN";
+          //  questionTextBox.text = "FAMED 'YELLOW' PAINTING STOLEN";
+             endingwriter.setEndColor("Yellow");
     
         if (huePosition >90 && huePosition <=150)
-            questionTextBox.text = "FAMED 'GREEN' PAINTING STOLEN";
+          //  questionTextBox.text = "FAMED 'GREEN' PAINTING STOLEN";
+             endingwriter.setEndColor("Green");
 
         if (huePosition >150 && huePosition <=210)
-        questionTextBox.text = "FAMED 'CYAN' PAINTING STOLEN";
+        //questionTextBox.text = "FAMED 'CYAN' PAINTING STOLEN";
+         endingwriter.setEndColor("Cyan");
 
         if (huePosition >210  && huePosition <=270)
-        questionTextBox.text = "FAMED 'BLUE' PAINTING STOLEN";
+        //questionTextBox.text = "FAMED 'BLUE' PAINTING STOLEN";
+         endingwriter.setEndColor("Blue");
 
         if (huePosition >270 && huePosition <= 330)
-          questionTextBox.text = "FAMED 'MAGENTA' PAINTING STOLEN";
+          //questionTextBox.text = "FAMED 'MAGENTA' PAINTING STOLEN";
+           endingwriter.setEndColor("Magenta");
 
         if ((huePosition >330) && (huePosition <= 360))
-          questionTextBox.text = "FAMED 'RED' PAINTING STOLEN(330-360)";  
+          //questionTextBox.text = "FAMED 'RED' PAINTING STOLEN(330-360)";  
+           endingwriter.setEndColor("Red");
     }
 
 
@@ -181,8 +195,8 @@ public class HueController : MonoBehaviour
     {
         // Control Ending. (not really needed as Scriptables will control narrative.)
           //  Debug.Log(clickCount+":"+endClickCount);
-            if (clickCount == endClickCount){
-                FakeEnd();
+      //      if (clickCount == endClickCount){
+         //       FakeEnd();
                }
-    }
+
 }
