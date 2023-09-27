@@ -1278,7 +1278,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   homePanel: {fileID: 0}
-  endingManager: {fileID: 0}
 --- !u!1 &1183926790
 GameObject:
   m_ObjectHideFlags: 0

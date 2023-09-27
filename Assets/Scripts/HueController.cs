@@ -23,8 +23,8 @@ public class HueController : MonoBehaviour
 
     // Script Refrences
     public ButtonController buttonController;
-    public GameObject endingManager;
-    public EndingWriter endingwriter;
+    //public GameObject endingManager;
+   // public EndingWriter EndingWriter.Instance;
 
 
     void Awake()
@@ -32,9 +32,9 @@ public class HueController : MonoBehaviour
         //questionTextBox.color = currentColor;
         // have buttons & get all text components
         buttonController = GetComponent<ButtonController>();
-        endingManager = GameObject.Find("EndingManager");
-        endingwriter = endingManager.GetComponent<EndingWriter>();
-    }
+        //endingManager = GameObject.Find("EndingManager");
+        //EndingWriter.Instance = endingManager.GetComponent<EndingWriter>();
+    }//
 
     void Start(){
         currentColor = Color.white;
@@ -150,44 +150,52 @@ public class HueController : MonoBehaviour
             b3text.color = currentColor;
     }
 
-    public Color getHueColor()
+    public Color GetHueColor()
     {
         return currentColor;
     }
+
     //Different ending text dependent on color block of text at final question. - 6 or 12 endings
-    public void GiveEndColor()
-    {
-        //choice buttons fade out and then are destroyed.
-        // text fades out then changes to ending text and fades back in?
+  public string GetEndColor() // TO DO THIS IS THE ONE ERRORING.
+   {
         Debug.Log(huePosition);
-        if (huePosition >=0  && huePosition <=30)
-            endingwriter.setEndColor("Red");
+
+         if (huePosition >=0  && huePosition <=30){
+            return ("Red");
+         }
     
-        if (huePosition > 30  && huePosition <=90)
-          //  questionTextBox.text = "FAMED 'YELLOW' PAINTING STOLEN";
-             endingwriter.setEndColor("Yellow");
+         else if (huePosition > 30  && huePosition <=90){
+             questionTextBox.text = "FAMED 'YELLOW' PAINTING STOLEN";
+            return ("Yellow");
+        }
     
-        if (huePosition >90 && huePosition <=150)
-          //  questionTextBox.text = "FAMED 'GREEN' PAINTING STOLEN";
-             endingwriter.setEndColor("Green");
+        else if (huePosition >90 && huePosition <=150){
+           //  questionTextBox.text = "FAMED 'GREEN' PAINTING STOLEN";
+              return ("Green");
+         }
 
-        if (huePosition >150 && huePosition <=210)
-        //questionTextBox.text = "FAMED 'CYAN' PAINTING STOLEN";
-         endingwriter.setEndColor("Cyan");
+         else if (huePosition >150 && huePosition <=210){
+         //questionTextBox.text = "FAMED 'CYAN' PAINTING STOLEN";
+          return ("Cyan");
+         }
 
-        if (huePosition >210  && huePosition <=270)
-        //questionTextBox.text = "FAMED 'BLUE' PAINTING STOLEN";
-         endingwriter.setEndColor("Blue");
+         else if (huePosition >210  && huePosition <=270){
+         //questionTextBox.text = "FAMED 'BLUE' PAINTING STOLEN";
+         // EndingWriter.Instance.endColor = ("Blue");
+         return "Blue";
+         }
 
-        if (huePosition >270 && huePosition <= 330)
-          //questionTextBox.text = "FAMED 'MAGENTA' PAINTING STOLEN";
-           endingwriter.setEndColor("Magenta");
+         else if (huePosition >270 && huePosition <= 330){
+           //questionTextBox.text = "FAMED 'MAGENTA' PAINTING STOLEN";
+            return ("Magenta");
+         }
 
-        if ((huePosition >330) && (huePosition <= 360))
-          //questionTextBox.text = "FAMED 'RED' PAINTING STOLEN(330-360)";  
-           endingwriter.setEndColor("Red");
-    }
-
+        else if (huePosition >330 && huePosition <= 360){
+           //questionTextBox.text = "FAMED 'RED' PAINTING STOLEN(330-360)";  
+            return ("Red");
+        }
+        else return ("ohno");
+     }
 
 
     // Update is called once per frame

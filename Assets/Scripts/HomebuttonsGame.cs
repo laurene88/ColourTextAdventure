@@ -6,12 +6,7 @@ using UnityEngine.SceneManagement;
 public class HomebuttonsGame : MonoBehaviour
 {
     [SerializeField] public GameObject homePanel;
-    public GameObject endingManager;
 
-    public void Start()
-    {
-        endingManager = GameObject.Find("EndingManager");
-    }
     public void clickHome()
     {
         if (homePanel != null){
@@ -23,9 +18,6 @@ public class HomebuttonsGame : MonoBehaviour
     public void clickYes()
     {
         SceneManager.LoadScene(0);
-        if (endingManager != null){
-            Destroy(endingManager); // TO DO pehaps get rid of this, just reset/rewrite?
-        }
         }
 
     public void clickNo(){

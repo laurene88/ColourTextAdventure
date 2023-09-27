@@ -21,8 +21,8 @@ public class ButtonController : MonoBehaviour
     // Script References
     public HueController hueController;
     public QuestionController questionController;
-    public GameObject endingManager;
-    public EndingWriter endingWriter;
+   // public GameObject endingManager;
+   // public EndingWriter EndingWriter;
 
     public void Awake()
     {
@@ -30,7 +30,7 @@ public class ButtonController : MonoBehaviour
         buttonLocations = new GameObject[] {button1location, button2location, button3location};
         hueController = GetComponent<HueController>();
         questionController = GetComponent<QuestionController>();
-        endingWriter = endingManager.GetComponent<EndingWriter>();
+        //EndingWriter = endingManager.GetComponent<EndingWriter>();
     }
 
 
@@ -80,7 +80,7 @@ public class ButtonController : MonoBehaviour
         questionController.ButtonClicked("Red");
         // If button has impactful change on ending result
         if (questionController.currentQS.hasImpactfulChange) {
-           endingWriter.HasImpactfulChange(questionController.currentQS.name, "Red");
+           EndingWriter.Instance.HasImpactfulChange(questionController.currentQS.name, "Red");
 
         }
     }
@@ -91,7 +91,7 @@ public class ButtonController : MonoBehaviour
         questionController.ButtonClicked("Blue");
         // If button has impactful change on ending result
         if (questionController.currentQS.hasImpactfulChange) {
-           endingWriter.HasImpactfulChange(questionController.currentQS.name, "Blue"); 
+           EndingWriter.Instance.HasImpactfulChange(questionController.currentQS.name, "Blue"); 
            }
     }
 
@@ -101,7 +101,7 @@ public class ButtonController : MonoBehaviour
         questionController.ButtonClicked("Green");
         // If button has impactful change on ending result
         if (questionController.currentQS.hasImpactfulChange) {
-           endingWriter.HasImpactfulChange(questionController.currentQS.name, "Green");
+           EndingWriter.Instance.HasImpactfulChange(questionController.currentQS.name, "Green");
         }
     }
 

@@ -13,19 +13,35 @@ public class EndingsPageScript : MonoBehaviour
     public GameObject magentaFrame;
 
 
-
     // need to have a marker when each ending is reached
     // then change the appropriate frame & text color & alpha
 
     //  color is r,g,b,a
     public void Start()
     {
-        RedDone();
-        YellowDone();
+        if (EndingWriter.Instance.RedDone == true){
+            RedDone();
+        }
+        
+        if (EndingWriter.Instance.YellowDone == true){
+            YellowDone();
+        }
+        
+        if (EndingWriter.Instance.GreenDone == true){
         GreenDone();
+        }
+
+        if (EndingWriter.Instance.CyanDone == true){
         CyanDone();
+        }
+        
+        if (EndingWriter.Instance.BlueDone == true){
         BlueDone();
+        }
+        
+        if (EndingWriter.Instance.MagentaDone == true){
         MagentaDone();
+        }
     }
 
     public void RedDone(){

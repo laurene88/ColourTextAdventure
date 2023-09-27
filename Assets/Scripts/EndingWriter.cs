@@ -5,6 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class EndingWriter : MonoBehaviour
 {
+    // Sets up persistence/singleton pattern.
+    public static EndingWriter Instance;
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(this);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(this);
+    }
+
+
 // Keeps a note of all the impactful change choices made
 // to write in the ending
 public GameObject gm;
@@ -20,15 +36,26 @@ public bool leftPaint;
 public bool tookMany;
 public bool tookTwo;
 
-// Strings
-public string endColor;
+//Ending Booleans
+public bool RedDone;
+public bool YellowDone;
+public bool GreenDone;
+public bool CyanDone;
+public bool BlueDone;
+public bool MagentaDone;
 
-public Color endHueColor;
+// END DATA Strings
+public string endColor; // which of the 6 endings you get.
+public Color endHueColor; // hue to set text color to.
 
-public void Start()
+public void Update()
 {
+    if (gm == null){ // In update so can find GM in new scenes.
+    gm = GameObject.Find("GM"); 
     huecontroller = gm.GetComponent<HueController>();
+    }
 }
+
 // Called from the ButtonController, passes Question Controller, scriptable information.
 public void HasImpactfulChange(string QSname, string color)
 {
@@ -52,7 +79,6 @@ public void HasImpactfulChange(string QSname, string color)
         leftPaint = true;
       }     
 
-            
   if (QSname == "SprayGroupSymbol" && color == "Green"){
       //sprayed square symbol
       sprayedSymbol = true;
@@ -71,7 +97,6 @@ if (QSname == "SprayPoliticalSymbol" && color == "Green"){
          leftPaint = true;
       }   
     
-
 if (QSname == "WhichPieces" && color == "Red"){
         tookTwo = true;
         }
@@ -86,31 +111,44 @@ if (QSname == "WhichPieces" && color == "Green"){
     }
 
     if (QSname == "last"){
-        //GO TO END SCENES
-        endHueColor = huecontroller.getHueColor();
-        huecontroller.GiveEndColor();
-        DontDestroyOnLoad(this); // TO DO dont want more than 1 ending writer, dont want 
+        endColor = huecontroller.GetEndColor();
+        whichColorDone(endColor); 
+        endHueColor = huecontroller.GetHueColor();
         SceneManager.LoadScene("EndScene");
+     
     }
-
     return;
 }
 
-
-public void setEndColor(string color){
-    endColor = color;
-}
-
-public string getEndColor()
+public void whichColorDone(string endColor)
 {
-    return endColor;
+    switch (endColor){
+        case "Red":
+            RedDone = true;
+            break;
+        case "Yellow":
+            YellowDone = true;
+            break;
+        case "Green":
+            GreenDone = true;
+            break;
+        case "Cyan":
+            CyanDone = true;
+            break;
+        case "Blue":
+            BlueDone = true;
+            break;
+        case "Magenta":
+            MagentaDone = true;
+            break;
+        default: 
+        break;
+    }
+}
 }
 
-public Color getHue(){
-    return endHueColor;
-}
 //COLOR
 //CLOTHING
 //PAINTED
 //TOOK
-}
+
