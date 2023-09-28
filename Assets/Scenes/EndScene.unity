@@ -639,7 +639,7 @@ MonoBehaviour:
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
-  m_isRichText: 0
+  m_isRichText: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -651,7 +651,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 3.0638885, z: 0, w: 0}
+  m_margin: {x: -41.758392, y: 37.4532, z: -54.040237, w: -107.09179}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1195,8 +1195,6 @@ MonoBehaviour:
   b2text: {fileID: 1488559395}
   b3text: {fileID: 1265978260}
   buttonController: {fileID: 0}
-  endingManager: {fileID: 0}
-  endingwriter: {fileID: 0}
 --- !u!114 &1176961328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1222,9 +1220,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 342c3ece36b38cd4998e1485fb4305a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endingManager: {fileID: 0}
-  endingwriter: {fileID: 0}
   canvasTextBox: {fileID: 538002409}
+  endHueColor: {r: 0, g: 0, b: 0, a: 0}
+  sprayText: 
+  tookText: 
+  outfitText: 
 --- !u!1 &1183926790
 GameObject:
   m_ObjectHideFlags: 0
