@@ -156,7 +156,7 @@ public class HueController : MonoBehaviour
     }
 
     //Different ending text dependent on color block of text at final question. - 6 or 12 endings
-  public string GetEndColor() // TO DO THIS IS THE ONE ERRORING.
+  public string GetEndColor()
    {
         Debug.Log(huePosition);
 

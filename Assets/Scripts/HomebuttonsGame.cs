@@ -18,6 +18,7 @@ public class HomebuttonsGame : MonoBehaviour
     public void clickYes()
     {
         SceneManager.LoadScene(0);
+        EndingWriter.Instance.resetBooleans();
         }
 
     public void clickNo(){

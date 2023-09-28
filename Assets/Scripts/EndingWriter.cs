@@ -56,6 +56,18 @@ public void Update()
     }
 }
 
+public void resetBooleans(){
+    choseHats = false;
+    choseWigs = false;
+    choseBalaclavas = false;
+    sprayedPolitical = false;
+    sprayedSymbol = false;
+    leftPaint = false;
+    tookMany = false;
+    tookTwo = false;
+}
+
+
 // Called from the ButtonController, passes Question Controller, scriptable information.
 public void HasImpactfulChange(string QSname, string color)
 {
@@ -145,6 +157,7 @@ public void whichColorDone(string endColor)
         break;
     }
 }
+
 }
 
 //COLOR

@@ -18,9 +18,6 @@ public class EndSceneScript : MonoBehaviour
         endHueColor = EndingWriter.Instance.endHueColor;
         endColor = EndingWriter.Instance.endColor;
         changeText(endColor);
-        //endingwriter = endingManager.GetComponent<EndingWriter>();
-        //endcolor = endingwriter.getEndColor(); //TO DO HERE IS THE ISSUE. NEED TO DO EACH END.
-        //endHueColor = endingwriter.getHue();
         canvasTextBox.color = endHueColor;
     }
 
@@ -30,7 +27,7 @@ public class EndSceneScript : MonoBehaviour
         {
             case "Red":
             {
-                canvasTextBox.text = "red END";
+                canvasTextBox.text = "Red Ending"+(EndingWriter.Instance.tookMany? "yestookmany" : "no took");
             }
             break;
             case "Yellow":

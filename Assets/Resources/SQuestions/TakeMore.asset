@@ -23,7 +23,7 @@ MonoBehaviour:
   optionGreen: Risk worth taking
   specialStepValue: 8
   divergingScriptables: 1
-  hasImpactfulChange: 0
+  hasImpactfulChange: 1
   nextSQ: {fileID: 0}
   nextRedSQ: {fileID: 11400000, guid: 7ab5db8ed27cc314d8bcbdb7e9052a49, type: 2}
   nextBlueSQ: {fileID: 11400000, guid: 72b30feb20c5727499c1d3f811cf7365, type: 2}

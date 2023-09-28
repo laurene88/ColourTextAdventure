@@ -23,7 +23,7 @@ MonoBehaviour:
   optionGreen: Take all we can
   specialStepValue: 8
   divergingScriptables: 1
-  hasImpactfulChange: 0
+  hasImpactfulChange: 1
   nextSQ: {fileID: 0}
   nextRedSQ: {fileID: 11400000, guid: 294c96a8b392ba3418fe4b037439b39d, type: 2}
   nextBlueSQ: {fileID: 11400000, guid: 72b30feb20c5727499c1d3f811cf7365, type: 2}
