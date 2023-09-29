@@ -12,6 +12,7 @@ public class EndSceneScript : MonoBehaviour
     public string tookText;
     public string outfitText;
 
+
     void Start()
     { 
         endHueColor = EndingWriter.Instance.endHueColor;
