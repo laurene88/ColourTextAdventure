@@ -13,11 +13,13 @@ public class EndingWriter : MonoBehaviour
         if (Instance != null)
         {
             Destroy(this);
+            Destroy(this.GetComponent<AudioSource>());
+            Debug.Log("instance was not null");
             return;
-        }
-
+        }   else {
         Instance = this;
         DontDestroyOnLoad(this);
+        }
     }
 
 

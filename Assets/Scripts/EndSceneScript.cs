@@ -26,10 +26,10 @@ public class EndSceneScript : MonoBehaviour
 
     public void chooseSprayText(){
         if (EndingWriter.Instance.leftPaint){
-            sprayText = EndingWriter.Instance.sprayedPolitical? "Brazenly, the theives also sprayed paint on the walls of the museum, alluding to a political motive.":
+            sprayText = EndingWriter.Instance.sprayedPolitical? "Brazenly, the thieves also sprayed paint on the walls of the museum, alluding to a political motive.":
              "Daringly, the thieves were bold enough to spray paint on the walls of the museum before leaving. Police have indicated they sprayed a kind of symbol, believed to be related to their criminal ring.";
         }
-        else sprayText = "The thieves left little trace behind. It is assumed the theives hope to gain financially from selling the painting on the black market";
+        else sprayText = "The thieves left little trace behind. It is assumed the thieves hope to gain financially from selling the painting on the black market";
     }
 
     public void chooseTookText(){
@@ -74,7 +74,7 @@ public class EndSceneScript : MonoBehaviour
                     +"It is believed that this was the work of a group of thieves who entered under the cover of night. Likely between 1 and 3am - when the museums alarms and security system were turned off. <br><br> "
                     +outfitText+" "+tookText+" "+sprayText+"<br><br>"
                     +"The museum curator stated 'This is a very sad day for the museum. We have never had such a robbery at this museum "
-                    +"These theives are obviously tenacious and it is very worrying for other galleries. <br>"
+                    +"These thieves are obviously tenacious and it is very worrying for other galleries. <br>"
                     +"<br>The town museum will be closed to the public until the police have concluded their scene investigation.";
             }
             break;
