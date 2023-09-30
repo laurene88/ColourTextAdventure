@@ -5,6 +5,7 @@ using TMPro;
 
 public class HueController : MonoBehaviour
 {
+
     // Initial HSV values. Hue set to 0, will be changed after first question.
     public float huePosition = 0;
     public float saturation = 0.0f;
@@ -20,6 +21,7 @@ public class HueController : MonoBehaviour
     public TMP_Text b2text;
     public TMP_Text b3text;
 
+
     // Script Refrences
     public ButtonController buttonController;
  
@@ -29,10 +31,12 @@ public class HueController : MonoBehaviour
         buttonController = GetComponent<ButtonController>();
     }
 
+
     void Start()
     {
         currentColor = Color.white;
     }
+
 
     //---------------------------------------------------------------------------
     // HUE INFORMATION
@@ -144,13 +148,14 @@ public class HueController : MonoBehaviour
             b3text.color = currentColor;
     }
 
+
     public Color GetHueColor()
     {
         return currentColor;
     }
 
 
-    // Different string of colour name dependent on final hue, each 6 is a different ending.
+    // Returns different string of colour name dependent on final hue, split into 6 different endings.
   public string GetEndColor()
    {
          if (huePosition >=0  && huePosition <=30){

@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class MenuScript : MonoBehaviour
 {
 
-    public GameObject exittingPanel;
-
     public void PressStartButton()
     {
         //take to main game.

@@ -30,7 +30,6 @@ public class CheatMode : MonoBehaviour
     void ToggleValueChanged(Toggle change)
     {
         if (m_Toggle.isOn){
-           //redButton.GetComponent<Image>().color = new Color(0.5754717f, 0.1284858f, 0.1415045f, 1);
             redButton.GetComponent<Image>().color = Color.red;
             blueButton.GetComponent<Image>().color = Color.blue;
             greenButton.GetComponent<Image>().color = Color.green;

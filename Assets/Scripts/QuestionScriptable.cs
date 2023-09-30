@@ -6,7 +6,7 @@ using TMPro;
 [CreateAssetMenu]
 public class QuestionScriptable : ScriptableObject
 {
-    // Main text for the story/question.
+    // Main text for the story/question in editor.
     [TextAreaAttribute(5,50)]
     public string question;
     
@@ -23,10 +23,11 @@ public class QuestionScriptable : ScriptableObject
 
     // Boolean, does this question lead to different question based on the answer chosen.
     public bool divergingScriptables;
+    // Boolean, does this question have an answer that will affect the ending.
     public bool hasImpactfulChange;
 
 
-    // Links to next question scriptables for all answer selections.
+    // Links to next question scriptables for all answer selections, divergent or not.
     public QuestionScriptable nextSQ;
     public QuestionScriptable nextRedSQ;
     public QuestionScriptable nextBlueSQ;

@@ -12,30 +12,26 @@ public class ButtonController : MonoBehaviour
     public GameObject button3location;
     public GameObject[] buttonLocations;
 
+
     //Buttons and Main question textbox.
     public TMP_Text questionTextBox;
     public Button RedButton;
     public Button BlueButton;
     public Button GreenButton;
 
+
     // Script References
     public HueController hueController;
     public QuestionController questionController;
-   // public GameObject endingManager;
-   // public EndingWriter EndingWriter;
+
 
     public void Awake()
     {
-        //could find all buttons and their text objects?
         buttonLocations = new GameObject[] {button1location, button2location, button3location};
         hueController = GetComponent<HueController>();
         questionController = GetComponent<QuestionController>();
-        //EndingWriter = endingManager.GetComponent<EndingWriter>();
     }
 
-
-    // Get the correct Question scriptable
-    //(or be given it by the GM.)
 
     // Shuffles the button LOCATIONS in the list.
     public void FisherYatesShuffle(GameObject[] b)
@@ -48,6 +44,7 @@ public class ButtonController : MonoBehaviour
         }
 
     }
+
 
     // Method is given the correct new QuestionScriptable by the QuestionController.   
     public void ResetBoxes(QuestionScriptable newQS)
@@ -67,13 +64,12 @@ public class ButtonController : MonoBehaviour
         RedButton.transform.position = buttonLocations[0].transform.position;
         BlueButton.transform.position = buttonLocations[1].transform.position;
         GreenButton.transform.position = buttonLocations[2].transform.position;
-        
     }
+
 
     // When a button is clicked:
     // - Pass the click and the color of the button to the Hue Controller
     // - Pass the click and the color of the button to the Question Controller
-    // EXCEPT where the button is 'special' as has different Hue change settings.
     public void ClickRed()
     {
         hueController.RedChoice(questionController.currentQS.specialStepValue);
@@ -85,6 +81,7 @@ public class ButtonController : MonoBehaviour
         }
     }
 
+
     public void ClickBlue()
     { 
         hueController.BlueChoice(questionController.currentQS.specialStepValue);
@@ -95,6 +92,7 @@ public class ButtonController : MonoBehaviour
            }
     }
 
+
     public void ClickGreen()
     {        
         hueController.GreenChoice(questionController.currentQS.specialStepValue);
@@ -104,7 +102,5 @@ public class ButtonController : MonoBehaviour
            EndingWriter.Instance.HasImpactfulChange(questionController.currentQS.name, "Green");
         }
     }
-
-
 
 }

@@ -5,9 +5,11 @@ using TMPro;
 
 public class QuestionController : MonoBehaviour
 {
+
     // Script references
     public ButtonController buttonController;
     public HueController hueController;
+
 
     // QuestionScriptable references
     public QuestionScriptable currentQS;
@@ -20,6 +22,7 @@ public class QuestionController : MonoBehaviour
         hueController = GetComponent<HueController>();
     }
     
+
     // Every button click calls this method, 
     // This sets the appropriate next question scriptable
     public void ButtonClicked(string colourPressed){
@@ -44,6 +47,7 @@ public class QuestionController : MonoBehaviour
             }
         }
     }
+
 
     void Update()
     {

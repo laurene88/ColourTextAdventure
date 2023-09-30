@@ -12,6 +12,10 @@ public class EndSceneScript : MonoBehaviour
     public string tookText;
     public string outfitText;
 
+    /// <summary>
+    /// Accesses game information from EndingWriter Instance
+    /// Uses this to set ending, hue, and text based on color and specific game choices.
+    /// </summary>
 
     void Start()
     { 
