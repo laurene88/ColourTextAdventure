@@ -10,11 +10,12 @@ public class EndingWriter : MonoBehaviour
 
     private void Awake()
     {
+        // Sets up singleton instance of endingWriter.
+        // Removes audio if double up of endingManager
         if (Instance != null)
         {
             Destroy(this);
             Destroy(this.GetComponent<AudioSource>());
-            Debug.Log("instance was not null");
             return;
         }   else {
         Instance = this;

@@ -21,7 +21,7 @@ MonoBehaviour:
   optionRed: Confident
   optionBlue: Organised
   optionGreen: Too confident
-  specialStepValue: 8
+  specialStepValue: 20
   divergingScriptables: 0
   hasImpactfulChange: 0
   nextSQ: {fileID: 11400000, guid: f02ee868e9e2a914693b67cac5a6f63f, type: 2}

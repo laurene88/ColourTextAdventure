@@ -20,7 +20,7 @@ MonoBehaviour:
   optionRed: More than ready
   optionBlue: Prepared
   optionGreen: Excited
-  specialStepValue: 60
+  specialStepValue: 100
   divergingScriptables: 0
   hasImpactfulChange: 0
   nextSQ: {fileID: 11400000, guid: a22d3581d233e094094459721aa811c9, type: 2}

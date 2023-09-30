@@ -17,7 +17,7 @@ MonoBehaviour:
   optionRed: I'm intrigued
   optionBlue: I regret it already
   optionGreen: I wish I'd thought of this
-  specialStepValue: 10
+  specialStepValue: 11
   divergingScriptables: 0
   hasImpactfulChange: 1
   nextSQ: {fileID: 11400000, guid: 49982a384d2f2464892c3737e3c8cacd, type: 2}

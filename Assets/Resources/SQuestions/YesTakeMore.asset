@@ -22,7 +22,7 @@ MonoBehaviour:
   optionRed: This is stressful
   optionBlue: This is insane
   optionGreen: This is smart
-  specialStepValue: 8
+  specialStepValue: 11
   divergingScriptables: 0
   hasImpactfulChange: 1
   nextSQ: {fileID: 11400000, guid: cc5486f4da80f964da9891f9091b07b4, type: 2}

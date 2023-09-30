@@ -1343,6 +1343,7 @@ GameObject:
   - component: {fileID: 1003503586}
   - component: {fileID: 1003503585}
   - component: {fileID: 1003503584}
+  - component: {fileID: 1003503587}
   m_Layer: 5
   m_Name: HomeButton
   m_TagString: Untagged
@@ -1414,7 +1415,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1176961323}
+      - m_Target: {fileID: 1003503587}
         m_TargetAssemblyTypeName: HomebuttonsGame, Assembly-CSharp
         m_MethodName: clickYes
         m_Mode: 1
@@ -1464,6 +1465,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003503582}
   m_CullTransparentMesh: 1
+--- !u!114 &1003503587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003503582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6ef2c79b30ca2439f5912135f02783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  homePanel: {fileID: 1003503582}
 --- !u!1 &1176961320
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ MonoBehaviour:
   optionRed: Audacious
   optionBlue: Cunning
   optionGreen: Greedy
-  specialStepValue: 8
+  specialStepValue: 5
   divergingScriptables: 0
   hasImpactfulChange: 1
   nextSQ: {fileID: 0}

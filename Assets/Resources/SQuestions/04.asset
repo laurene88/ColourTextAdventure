@@ -18,7 +18,7 @@ MonoBehaviour:
   optionRed: Loud
   optionBlue: Chill
   optionGreen: Chaotic
-  specialStepValue: 15
+  specialStepValue: 57
   divergingScriptables: 0
   hasImpactfulChange: 0
   nextSQ: {fileID: 11400000, guid: cad927c7a9357864b8d5fe17ab27a50e, type: 2}

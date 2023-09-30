@@ -17,6 +17,7 @@ public class HomebuttonsGame : MonoBehaviour
 
     public void clickYes()
     {
+        homePanel.SetActive(false);
         SceneManager.LoadScene(0);
         EndingWriter.Instance.resetBooleans();
         }

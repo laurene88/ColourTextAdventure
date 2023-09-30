@@ -16,7 +16,7 @@ MonoBehaviour:
   optionRed: Hats and dark glasses
   optionBlue: Balaclavas
   optionGreen: Wigs
-  specialStepValue: 8
+  specialStepValue: 23
   divergingScriptables: 0
   hasImpactfulChange: 1
   nextSQ: {fileID: 11400000, guid: d54244f2c652a764e9983b79c710b2cd, type: 2}

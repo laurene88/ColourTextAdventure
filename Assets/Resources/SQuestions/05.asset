@@ -20,7 +20,7 @@ MonoBehaviour:
   optionRed: Bold
   optionBlue: Orderly
   optionGreen: Creative
-  specialStepValue: 15
+  specialStepValue: 37
   divergingScriptables: 0
   hasImpactfulChange: 0
   nextSQ: {fileID: 11400000, guid: e6bb408372d0b234db81bbe9a4600063, type: 2}

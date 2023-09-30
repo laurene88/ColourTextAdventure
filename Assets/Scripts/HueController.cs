@@ -9,12 +9,11 @@ public class HueController : MonoBehaviour
     public float huePosition = 0;
     public float saturation = 0.0f;
     public float value = 1;
-
-    public int clickCount = 0;
-    public float topClickCount = 18f; // Relates to maximum saturation
-    public static int endClickCount = 25; // Relates to the end of the game
+    public static float topClickCount = 22.0f; // Relates to maximum saturation
     public Color currentColor = Color.white;
-
+    public int clickCount = 0;
+      
+   
     // References to all of the text in the scene.
     public TMP_Text questionTextBox;
     public TMP_Text b1text;
@@ -23,20 +22,15 @@ public class HueController : MonoBehaviour
 
     // Script Refrences
     public ButtonController buttonController;
-    //public GameObject endingManager;
-   // public EndingWriter EndingWriter.Instance;
-
+ 
 
     void Awake()
     {
-        //questionTextBox.color = currentColor;
-        // have buttons & get all text components
         buttonController = GetComponent<ButtonController>();
-        //endingManager = GameObject.Find("EndingManager");
-        //EndingWriter.Instance = endingManager.GetComponent<EndingWriter>();
-    }//
+    }
 
-    void Start(){
+    void Start()
+    {
         currentColor = Color.white;
     }
 
@@ -75,7 +69,7 @@ public class HueController : MonoBehaviour
         if (huePosition == 360 || huePosition == 0){
             // do nothing
         }
-        else if (huePosition <=180){
+        else if (huePosition != 0 && huePosition <=180){
            MinusStep(stepValue); 
         } else {
             PlusStep(stepValue);
@@ -142,7 +136,8 @@ public class HueController : MonoBehaviour
     public void UpdateHue()
     {
         saturation = clickCount/topClickCount;
-       // Debug.Log("updatnig hue- clickcount:"+clickCount+"saturation:"+saturation+"hueposition:"+huePosition);
+        Debug.Log(clickCount+"/"+topClickCount+"="+saturation);
+        Debug.Log("clicks: "+clickCount+"saturation: "+saturation+"hueposition: "+huePosition);
             currentColor = Color.HSVToRGB(huePosition/360, saturation, value);
             questionTextBox.color = currentColor;
             b1text.color = currentColor;
@@ -165,46 +160,29 @@ public class HueController : MonoBehaviour
          }
     
          else if (huePosition > 30  && huePosition <=90){
-             questionTextBox.text = "FAMED 'YELLOW' PAINTING STOLEN";
             return ("Yellow");
         }
     
         else if (huePosition >90 && huePosition <=150){
-           //  questionTextBox.text = "FAMED 'GREEN' PAINTING STOLEN";
               return ("Green");
          }
 
          else if (huePosition >150 && huePosition <=210){
-         //questionTextBox.text = "FAMED 'CYAN' PAINTING STOLEN";
           return ("Cyan");
          }
 
          else if (huePosition >210  && huePosition <=270){
-         //questionTextBox.text = "FAMED 'BLUE' PAINTING STOLEN";
-         // EndingWriter.Instance.endColor = ("Blue");
          return "Blue";
          }
 
          else if (huePosition >270 && huePosition <= 330){
-           //questionTextBox.text = "FAMED 'MAGENTA' PAINTING STOLEN";
             return ("Magenta");
          }
 
         else if (huePosition >330 && huePosition <= 360){
-           //questionTextBox.text = "FAMED 'RED' PAINTING STOLEN(330-360)";  
             return ("Red");
         }
         else return ("ohno");
      }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        // Control Ending. (not really needed as Scriptables will control narrative.)
-          //  Debug.Log(clickCount+":"+endClickCount);
-      //      if (clickCount == endClickCount){
-         //       FakeEnd();
-               }
 
 }

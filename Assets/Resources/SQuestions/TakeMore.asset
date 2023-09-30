@@ -21,7 +21,7 @@ MonoBehaviour:
   optionRed: Which pieces?
   optionBlue: No way
   optionGreen: Risk worth taking
-  specialStepValue: 8
+  specialStepValue: 25
   divergingScriptables: 1
   hasImpactfulChange: 1
   nextSQ: {fileID: 0}

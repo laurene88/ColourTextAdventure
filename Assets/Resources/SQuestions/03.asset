@@ -16,7 +16,7 @@ MonoBehaviour:
   optionRed: Charisma
   optionBlue: Intelligence
   optionGreen: Confidence
-  specialStepValue: 30
+  specialStepValue: 82
   divergingScriptables: 0
   hasImpactfulChange: 0
   nextSQ: {fileID: 11400000, guid: a49eede4e57053648a3d851ba7db0124, type: 2}

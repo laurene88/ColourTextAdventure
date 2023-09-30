@@ -18,7 +18,7 @@ MonoBehaviour:
   optionRed: I'm distrustful of Charlie
   optionBlue: I'm relieved
   optionGreen: I regret this already.
-  specialStepValue: 8
+  specialStepValue: 13
   divergingScriptables: 0
   hasImpactfulChange: 0
   nextSQ: {fileID: 11400000, guid: 49982a384d2f2464892c3737e3c8cacd, type: 2}

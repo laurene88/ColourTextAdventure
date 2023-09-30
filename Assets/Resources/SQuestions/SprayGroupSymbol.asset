@@ -22,7 +22,7 @@ MonoBehaviour:
   optionRed: A+T symbol
   optionBlue: No, itd be a mistake
   optionGreen: Square
-  specialStepValue: 10
+  specialStepValue: 25
   divergingScriptables: 1
   hasImpactfulChange: 1
   nextSQ: {fileID: 0}

@@ -14,25 +14,7 @@ public class MenuScript : MonoBehaviour
         //take to main game.
         SceneManager.LoadScene(1);
     }
-
-
-    public void PressExitButton()
-    {
-      exittingPanel.SetActive(true);
-    }
-
-    //----------------------------------------------
-    // Exit button Removed as Web based hosting.
-    //----------------------------------------------
-   
-   // public void ExitYes(){
-    //    Application.Quit();
-    //}
-
-    public void ExitNo(){
-         exittingPanel.SetActive(false);
-
-    }
+    
 
     public void PressEndingsButton(){
         SceneManager.LoadScene("EndingsPage");

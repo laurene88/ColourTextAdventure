@@ -22,7 +22,7 @@ MonoBehaviour:
   optionRed: Group symbol
   optionBlue: No spray paint
   optionGreen: Political statement
-  specialStepValue: 15
+  specialStepValue: 25
   divergingScriptables: 1
   hasImpactfulChange: 0
   nextSQ: {fileID: 11400000, guid: 9758ed8c7b945664bbe515289c407514, type: 2}

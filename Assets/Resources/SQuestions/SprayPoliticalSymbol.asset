@@ -21,7 +21,7 @@ MonoBehaviour:
   optionRed: Returning art
   optionBlue: No, itd be a mistake
   optionGreen: Political statement
-  specialStepValue: 8
+  specialStepValue: 25
   divergingScriptables: 1
   hasImpactfulChange: 1
   nextSQ: {fileID: 0}
