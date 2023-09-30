@@ -13,10 +13,6 @@ public class EndingsPageScript : MonoBehaviour
     public GameObject magentaFrame;
 
 
-    // need to have a marker when each ending is reached
-    // then change the appropriate frame & text color & alpha
-
-    //  color is r,g,b,a
     public void Start()
     {
         if (EndingWriter.Instance.RedDone == true){
@@ -44,6 +40,8 @@ public class EndingsPageScript : MonoBehaviour
         }
     }
 
+
+    // Changes the frame/text colours if colour is completed.
     public void RedDone(){
         SpriteRenderer framesr = redFrame.GetComponent<SpriteRenderer>();
       framesr.color = new Color(1,0,0,1);

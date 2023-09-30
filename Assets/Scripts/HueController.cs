@@ -94,6 +94,7 @@ public class HueController : MonoBehaviour
         UpdateHue();
     }
 
+
     // Green Hue is 120, Opposite is 300.
     public void GreenChoice(int stepValue)
     {
@@ -107,7 +108,6 @@ public class HueController : MonoBehaviour
         }
         clickCount++;
         UpdateHue();
-
     }
 
 
@@ -136,8 +136,7 @@ public class HueController : MonoBehaviour
     public void UpdateHue()
     {
         saturation = clickCount/topClickCount;
-        Debug.Log(clickCount+"/"+topClickCount+"="+saturation);
-        Debug.Log("clicks: "+clickCount+"saturation: "+saturation+"hueposition: "+huePosition);
+        //Debug.Log("clicks: "+clickCount+"saturation: "+saturation+"hueposition: "+huePosition);
             currentColor = Color.HSVToRGB(huePosition/360, saturation, value);
             questionTextBox.color = currentColor;
             b1text.color = currentColor;
@@ -150,11 +149,10 @@ public class HueController : MonoBehaviour
         return currentColor;
     }
 
-    //Different ending text dependent on color block of text at final question. - 6 or 12 endings
+
+    // Different string of colour name dependent on final hue, each 6 is a different ending.
   public string GetEndColor()
    {
-        Debug.Log(huePosition);
-
          if (huePosition >=0  && huePosition <=30){
             return ("Red");
          }

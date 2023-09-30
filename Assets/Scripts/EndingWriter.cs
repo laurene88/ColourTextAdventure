@@ -5,27 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class EndingWriter : MonoBehaviour
 {
-    // Sets up persistence/singleton pattern.
+    //Singleton pattern
     public static EndingWriter Instance;
 
-    private void Awake()
-    {
-        // Sets up singleton instance of endingWriter.
-        // Removes audio if double up of endingManager
-        if (Instance != null)
-        {
-            Destroy(this);
-            Destroy(this.GetComponent<AudioSource>());
-            return;
-        }   else {
-        Instance = this;
-        DontDestroyOnLoad(this);
-        }
-    }
-
-
-// Keeps a note of all the impactful change choices made
-// to write in the ending
+// Keeps a note of all the impactful change choices made to 
+//     to write in the ending
 public GameObject gm;
 public HueController huecontroller;
 
@@ -39,7 +23,8 @@ public bool leftPaint;
 public bool tookMany;
 public bool tookTwo;
 
-//Ending Booleans
+
+//Ending Booleans - Which of the endings have been earned.
 public bool RedDone;
 public bool YellowDone;
 public bool GreenDone;
@@ -47,9 +32,27 @@ public bool CyanDone;
 public bool BlueDone;
 public bool MagentaDone;
 
+
 // END DATA Strings
 public string endColor; // which of the 6 endings you get.
 public Color endHueColor; // hue to set text color to.
+
+
+private void Awake()
+{
+    // Sets up singleton instance of endingWriter.
+    // (Removes audio if double up of endingManager)
+    if (Instance != null)
+    {
+        Destroy(this);
+        Destroy(this.GetComponent<AudioSource>());
+        return;
+    } else {
+    Instance = this;
+    DontDestroyOnLoad(this);
+    }
+}
+
 
 public void Update()
 {
@@ -59,6 +62,7 @@ public void Update()
     }
 }
 
+// Sets all storyline bools to false.
 public void resetBooleans(){
     choseHats = false;
     choseWigs = false;
@@ -130,10 +134,10 @@ if (QSname == "WhichPieces" && color == "Green"){
         whichColorDone(endColor); 
         endHueColor = huecontroller.GetHueColor();
         SceneManager.LoadScene("EndScene");
-     
     }
     return;
 }
+
 
 public void whichColorDone(string endColor)
 {
@@ -162,9 +166,3 @@ public void whichColorDone(string endColor)
 }
 
 }
-
-//COLOR
-//CLOTHING
-//PAINTED
-//TOOK
-
