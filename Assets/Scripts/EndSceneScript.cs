@@ -51,7 +51,7 @@ public class EndSceneScript : MonoBehaviour
             outfitText = "There was no witnesses to the break-in, however there was a hair left at the scene which the police laboratory will be attempting to identify.";
         }
         if (EndingWriter.Instance.choseHats){
-            outfitText = "As of yet, the police have not spoken to any witesses, and anyone who was in the area between 1 and 3am is asked to come forward with any information.";
+            outfitText = "As of yet, the police have not spoken to any witnesses, and anyone who was in the area between 1 and 3am is asked to come forward with any information.";
         }
         else outfitText = "Witnesses that happened to be walking home at approximately 2:30am saw multiple people wearing balaclavas jumping the back fence of the museum.";
     }
